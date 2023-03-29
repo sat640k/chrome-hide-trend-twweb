@@ -1,0 +1,13 @@
+{
+  "name": "hide trend twweb",
+  "description": "hide trend on twitter website",
+  "version": "0.0.2",
+  "manifest_version": 3,
+  "permissions": ["activeTab"],
+  "content_scripts": [
+    {
+      "matches": ["https://twitter.com/*"],
+      "js": ["contentScript.js"]
+    }
+  ]
+}
